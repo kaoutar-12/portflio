@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  width: 650px;
-  background: #2b2a2a;
+  width: 1500px;
+  /* background: #2b2a2a; */
   display: flex;
   flex-direction: column;
   border: 1px solid #898900;
@@ -15,13 +15,16 @@
   justify-content: center;
   gap: 10px;
   height: var(--unit);
+  /* background: #6400b7; */
+  width: 100%;
+  overflow: hidden;
   /* border: 1px solid #898900; */
   /* max-width: 100%; */
 }
 .cell {
   height: 100%;
   width: calc(var(--size, 2) * var(--unit));
-  background: var(--pink);
+  background: #3f383f;
   border-radius: 1000px;
 }
 
@@ -73,6 +76,27 @@
 .cell.size-17 {
   --size: 17;
 }
+
 .cell.size-18 {
   --size: 18;
 }
+.cell.size-19 {
+  --size: 19;
+}
+.cell.size-20 {
+  --size: 20;
+}
+.cell.size-21 {
+  --size: 21;
+}
+.cell.size-22 {
+  --size: 22;
+}
+.cell.size-23 {
+  --size: 23;
+}
+
+.cell.darkpurple{background: var(--darkpurple);}
+.cell.purple{background: var(--purple);}
+.cell.beige{background: var(--beige);}
+.cell.pink{background: var(--pink);}
