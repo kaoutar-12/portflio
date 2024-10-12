@@ -1,10 +1,10 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Animation from "@/components/Animation";
 
 export default function Home() {
   return (
     <div>
-      
+      <Animation />
     </div>
   );
 }
