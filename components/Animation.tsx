@@ -13,6 +13,7 @@ const animation = () => {
         <div className="cell size-18"></div>
         <div className="cell size-18"></div>
         <div className="cell size-18"></div>
+        <div className="cell size-18"></div>
       </div>
     </div>
   );
