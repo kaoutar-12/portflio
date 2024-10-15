@@ -4,7 +4,10 @@ import Animation from "@/components/Animation";
 export default function Home() {
   return (
     <div>
-      <Animation />
+      {/* <Animation /> */}
+      <Intro/>
+      <Projects/>
+      <Contsct/>
     </div>
   );
 }
