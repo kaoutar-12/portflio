@@ -8,8 +8,8 @@
 }
 
 body {
-  background: var(--backgound);
+  /* background: var(--backgound); */
   margin: 0;
-  padding-top: 100px;
-  padding-left: 100px;
+  /* padding-top: 100px;
+  padding-left: 100px; */
 }
