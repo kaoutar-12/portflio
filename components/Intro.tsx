@@ -1,6 +1,6 @@
 import React from "react";
 import "@/styles/intro.css";
-
+import Image from "next/image";
 const Intro = () => {
   return (
     <section className="intro">
@@ -26,7 +26,16 @@ const Intro = () => {
           </div>
         </div>
         <div className="tags">
-          
+          <div className="item item1">
+            {/* <Image src="../pubic/html.png" alt="html" width={50} height={50} />   */}
+          </div>
+          <div className="item item2"></div>
+          <div className="item item3"></div>
+          <div className="item item4"></div>
+          <div className="item item5"></div>
+          <div className="item item6"></div>
+          <div className="item item7"></div>
+          <div className="item item8"></div>
         </div>
       </div>
       <div className="icon"></div>
