@@ -6,12 +6,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size:contain;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .top {
   width: 70%;
-  height: 1200px;
-  /* background: rgb(213, 88, 109); */
+  height: 500px;
+  background: rgb(213, 88, 109);
+}
+
+.bottom {
+  width: 70%;
+  height: 100px;
+  background: rgb(88, 58, 63);
 }

@@ -5,7 +5,9 @@ const Intro = () => {
   return (
     <div>
         <section className="intro">
-            <div className="top"></div>
+            <div className="top">
+              
+            </div>
             <div className="bottom"></div>
         </section>
     </div>
