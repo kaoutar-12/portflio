@@ -1,17 +1,17 @@
 .intro {
   width: 100vw;
-  /* height: 900px; */
-  background: pink;
-  background-image: url("../public/Intro\ \(1\).svg");
+  height: 900px;
+  background: #16181D;
+  background-image: url("../public/Intro.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size:contain;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 .top {
   width: 70%;
   height: 1200px;
-  background: rgb(213, 88, 109);
+  /* background: rgb(213, 88, 109); */
 }
