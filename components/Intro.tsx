@@ -1,13 +1,25 @@
 import React from "react";
 import "@/styles/intro.css";
 import Image from "next/image";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { HiOutlineCode } from "react-icons/hi";
+
 
 const Intro = () => {
   return (
     <section className="intro">
       <div className="info">
         <div className="header">
-          <div className="avatar"></div>
+          <div className="pic">
+            <Image
+              src="/hi.png"
+              alt="Kaoutar Mouradi"
+              width={100}
+              height={100}
+              className="avatar"
+            />
+            <HiOutlineCode className="avatar-icon"/>
+          </div>
           <div className="texts">
             <div className="name">
               <div>
@@ -69,7 +81,9 @@ const Intro = () => {
           </li>
         </ul>
       </div>
-      <div className="icon"></div>
+      <div className="icon">
+        <MdKeyboardDoubleArrowDown fill="#878EA1" />
+      </div>
     </section>
   );
 };

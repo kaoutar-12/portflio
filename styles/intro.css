@@ -1,16 +1,19 @@
 .intro {
   width: 100vw;
-  height: 900px;
+  /* height: 900px; */
   background: #16181d;
   background-image: url("../public/Intro.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 94px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .info {
@@ -38,7 +41,23 @@
 .avatar {
   width: 112px;
   height: 112px;
-  background: blue;
+  /* background: blue; */
+  border-radius: 999px;
+  border: solid 4px var(--Base-gray-300, #E3646E);
+}
+
+.pic{
+ position: relative;
+}
+
+.avatar-icon{
+  position: absolute;
+  color:#82BC4F;
+  font-size: 30px;
+  bottom: 10px;
+  right: 0;
+  background: #16181d;
+  
 }
 
 .texts {
@@ -149,9 +168,13 @@
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
-  background: green;
+  /* width: 32px; */
+  /* height: 32px; */
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
 }
 
 @keyframes scrollleft {
