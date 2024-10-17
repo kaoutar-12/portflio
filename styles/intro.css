@@ -89,7 +89,9 @@
 }
 .tags {
   width: 100%;
-  height: 100px;
+  height: 40px;
+  align-items: flex-start;
+  /* gap: 0px; */
   background: yellow;
   display: flex;
   position: relative;
@@ -105,19 +107,33 @@
 }
 
 .item {
-  width: 200px;
-  height: 100%;
-  background: red;
+  border-radius: var(--border-radius-border-full, 999px);
+  background: var(--Base-gray-300, #292c34);
   position: absolute;
-  left: max(calc(200px * 8), 100%);
+  left: max(calc(20px * 8), 100%);
   animation-name: scrollleft;
-  animation-duration: 30s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 16px;
 }
+
+.item span {
+  color: var(--Base-gray-500, #c0c4ce);
+  text-align: center;
+
+  /* Text Md */
+  font-family: "Maven Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
 .text {
   color: var(--Base-gray-500, #c0c4ce);
   text-align: center;
@@ -143,39 +159,31 @@
 }
 
 .item1 {
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
-  background: red;
+  animation-delay: calc(10s / 8 * (8 - 1) * -1);
 }
 
 .item2 {
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
-  background: rgb(29, 20, 62);
+  animation-delay: calc(10s / 8 * (8 - 2) * -1);
 }
 
 .item3 {
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
-  background: rgb(141, 186, 45);
+  animation-delay: calc(10s / 8 * (8 - 3) * -1);
 }
 
 .item4 {
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
-  background: rgb(67, 189, 146);
+  animation-delay: calc(10s / 8 * (8 - 4) * -1);
 }
 
 .item5 {
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
-  background: rgb(83, 39, 65);
+  animation-delay: calc(10s / 8 * (8 - 5) * -1);
 }
 
 .item6 {
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
-  background: rgb(11, 36, 86);
+  animation-delay: calc(10s / 8 * (8 - 6) * -1);
 }
 .item7 {
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
-  background: rgb(157, 115, 115);
+  animation-delay: calc(10s / 8 * (8 - 7) * -1);
 }
 .item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
-  background: rgb(19, 12, 12);
+  animation-delay: calc(10s / 8 * (8 - 8) * -1);
 }
