@@ -3,6 +3,7 @@ import "@/styles/intro.css";
 import Image from "next/image";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { HiOutlineCode } from "react-icons/hi";
+import Link from "next/link";
 
 
 const Intro = () => {
@@ -82,7 +83,9 @@ const Intro = () => {
         </ul>
       </div>
       <div className="icon">
+        <Link href="#">
         <MdKeyboardDoubleArrowDown fill="#878EA1" />
+        </Link>
       </div>
     </section>
   );
