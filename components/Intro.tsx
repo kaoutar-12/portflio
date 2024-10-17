@@ -1,16 +1,6 @@
 import React from "react";
 import "@/styles/intro.css";
 import Image from "next/image";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
-
-
-import { DiJavascript1 } from "react-icons/di";
-
-
-
 
 const Intro = () => {
   return (
@@ -33,34 +23,51 @@ const Intro = () => {
                 passion for UI effects, animations and creating intuitive,
                 dynamic user experiences.
               </p>
-              </div>  
+            </div>
           </div>
         </div>
-        <div className="tags">
-          <div className="item item1">
-            <FaHtml5 fill="#e3646e"/>
+        <ul className="tags">
+          <li className="item item1">
+            <span className="skill-icons--html"></span>
             <span>HTML</span>
-          </div>
-          <div className="item item2">
-            <FaCss3Alt fill="#3996db"/>
-            <span>CSS</span>  
-          </div>
-          <div className="item item3">
-            <DiJavascript1 fill="#EABD5F"/>
+          </li>
+          <li className="item item2">
+            <span className="skill-icons--css"></span>
+            <span>CSS</span>
+          </li>
+          <li className="item item3">
+            <span className="skill-icons--javascript"></span>
             <span>Javascript</span>
-          </div>
-          <div className="item item4">
-            <FaReact fill="#61DBFB"/>
+          </li>
+          <li className="item item4">
+            <span className="skill-icons--react-dark"></span>
             <span>React</span>
-          </div>
-          <div className="item item5">
-            <TbBrandNextjs fill="white"/>
+          </li>
+          <li className="item item5">
+            <span className="skill-icons--nextjs-dark"></span>
             <span>Next.js</span>
-          </div>
-          <div className="item item6"></div>
-          <div className="item item7"></div>
-          <div className="item item8"></div>
-        </div>
+          </li>
+          <li className="item item6">
+            <span className="skill-icons--cpp"></span>
+            <span>C++</span>
+          </li>
+          <li className="item item7">
+            <span className="skill-icons--c"></span>
+            <span>C</span>
+          </li>
+          <li className="item item8">
+            <span className="skill-icons--docker"></span>
+            <span>Docker</span>
+          </li>
+          <li className="item item9">
+            <span className="skill-icons--blender-dark"></span>
+            <span>Blender</span>
+          </li>
+          <li className="item item10">
+            <span className="skill-icons--figma-dark"></span>
+            <span>Figma</span>
+          </li>
+        </ul>
       </div>
       <div className="icon"></div>
     </section>
