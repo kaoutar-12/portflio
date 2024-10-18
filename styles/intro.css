@@ -26,6 +26,7 @@
   align-items: center;
   flex-direction: column;
   gap: 80px;
+  /* border: solid 1px pink; */
 }
 
 .header {
@@ -37,6 +38,7 @@
   align-items: center;
   flex-direction: column;
   gap: 56px;
+  /* border: solid 1px red; */
 }
 
 .avatar {
@@ -100,13 +102,13 @@
 .description {
   color: var(--Base-gray-400, #878ea1);
   text-align: center;
-
   /* Text Sm */
   font-family: "Maven Pro";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 19.6px */
+  line-height: 140%;
+  /* border: solid 1px red; */
 }
 .tags {
   width: 100%;
@@ -307,4 +309,56 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cg fill='none'%3E%3Crect width='256' height='256' fill='%23242938' rx='60'/%3E%3Cg clip-path='url(%23skillIconsFigmaDark0)'%3E%3Cpath fill='%230acf83' d='M94.347 228c18.4 0 33.333-14.933 33.333-33.333v-33.334H94.347c-18.4 0-33.334 14.934-33.334 33.334S75.947 228 94.347 228'/%3E%3Cpath fill='%23a259ff' d='M61.013 128c0-18.4 14.934-33.333 33.334-33.333h33.333v66.666H94.347c-18.4 0-33.334-14.933-33.334-33.333'/%3E%3Cpath fill='%23f24e1e' d='M61.013 61.333C61.013 42.933 75.947 28 94.347 28h33.333v66.667H94.347c-18.4 0-33.334-14.934-33.334-33.334'/%3E%3Cpath fill='%23ff7262' d='M127.68 28h33.333c18.4 0 33.334 14.933 33.334 33.333s-14.934 33.334-33.334 33.334H127.68z'/%3E%3Cpath fill='%231abcfe' d='M194.347 128c0 18.4-14.934 33.333-33.334 33.333S127.68 146.4 127.68 128s14.933-33.333 33.333-33.333S194.347 109.6 194.347 128'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='skillIconsFigmaDark0'%3E%3Cpath fill='%23fff' d='M61 28h133.36v200H61z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  
+  .intro{
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .name{
+    font-size: 12px;
+  }
+  .job{
+    font-size: 30px;
+  }
+
+  .description{
+    font-size: 10px;
+    width: 300px;
+  }
+  .tags{
+    width: 300px;
+  }
+  .item{
+    width: 74px;
+    /* padding: 8px 8px 8px 8px; */
+  }
+  .item span{
+    font-size: 10px;
+  }
+  .info{
+    gap:20px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .tags{
+    width: 700px;
+  }
+  .item span{
+    font-size: 10px;
+  }
+ .item{
+    width: 70px;
+    /* padding: 8px 8px 8px 8px; */
+ }
+ .info{
+    gap:20px;
+ }
 }

@@ -83,7 +83,7 @@ const Intro = () => {
         </ul>
       </div>
       <div className="icon">
-        <Link href="#">
+        <Link href="#projects">
         <MdKeyboardDoubleArrowDown fill="#878EA1" />
         </Link>
       </div>
