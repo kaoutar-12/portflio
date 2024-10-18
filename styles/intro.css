@@ -314,11 +314,12 @@
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 430px) {
   
   .intro{
     padding-top: 60px;
     padding-bottom: 20px;
+    gap: 40px;
   }
 
   .name{
@@ -360,5 +361,8 @@
  }
  .info{
     gap:20px;
+ }
+ .intro{
+  gap:40px;
  }
 }
