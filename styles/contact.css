@@ -18,6 +18,5 @@
 }
 
 .pic-contact:hover{
-    width: 150px;
-    height: 150px;
+    scale: 1.1;
 }

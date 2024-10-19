@@ -44,15 +44,22 @@
 .avatar {
   width: 112px;
   height: 112px;
-  /* background: blue; */
   border-radius: 999px;
+  /* background: blue; */
   border: solid 4px var(--Base-gray-300, #E3646E);
 }
+.avatar:hover{
+  scale: 1.1;
+  border-color: var(--Base-gray-300, #82bc4f);
+}
+
 
 .pic{
- position: relative;
+  position: relative;
 }
-.pic
+.pic:hover{
+  scale: 1.2;
+}
 
 .avatar-icon{
   position: absolute;
@@ -85,6 +92,11 @@
 
 .name span {
   color: var(--Base-gray-500, #e3646e);
+}
+
+.name:hover span{
+  color: var(--Base-gray-500, #82bc4f);
+  /* transform: scale(5); */
 }
 
 .job {

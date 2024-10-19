@@ -6,6 +6,7 @@ const Avatar = () => {
   return (
     <div className="pic-contact">
         
+
     </div>
   )
 }
