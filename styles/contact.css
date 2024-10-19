@@ -2,4 +2,22 @@
     width: 100vw;
     height: 900px;
     background: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-contact{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-contact:hover{
+    width: 150px;
+    height: 150px;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "@/styles/cards.css";
+import Card from "./card";
 
 const Cards = () => {
     
@@ -7,7 +8,9 @@ const Cards = () => {
     <div className="wrapper">
       <div className="container">
         <input type="radio" name="slide" id="c1" />
-        <label className="card" htmlFor="c1"></label>
+        <label className="card" htmlFor="c1">
+          <Card/>
+        </label>
 
         <input type="radio" name="slide" id="c2" />
         <label className="card" htmlFor="c2"></label>
