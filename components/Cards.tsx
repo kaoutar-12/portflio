@@ -2,6 +2,7 @@ import React from "react";
 import "@/styles/cards.css";
 
 const Cards = () => {
+    
   return (
     <div className="wrapper">
       <div className="container">
@@ -12,7 +13,8 @@ const Cards = () => {
         <label className="card" htmlFor="c2"></label>
 
         <input type="radio" name="slide" id="c3" />
-        <label className="card" htmlFor="c3"></label>
+        <label className="card" htmlFor="c3">
+        </label>
         <input type="radio" name="slide" id="c4" />
         <label className="card" htmlFor="c4"></label>
         <input type="radio" name="slide" id="c5" />

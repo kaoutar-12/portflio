@@ -1,12 +1,12 @@
 .wrapper {
   width: 90%;
-  height: 400px;
+  /* height: 400px; */
   /* background: pink; */
   display: flex;
   align-items: center;
   /* border: solid 1px red; */
     overflow: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -31,7 +31,7 @@
   /* border: solid 1px black; */
 }
 .card {
-  width: 300px;
+  width: 250px;
   /* height: 100px; */
   background: #223;
   border-radius: 30px;
