@@ -1,5 +1,9 @@
 .project{
     width: 100vw;
-    height: 900px;
-    background: rgb(100, 156, 225);
+    /* height: 900px; */
+    background: #16181d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 100px 0;
 }
