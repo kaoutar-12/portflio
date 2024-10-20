@@ -4,13 +4,14 @@ import { useState } from "react";
 import React from "react";
 import "@/styles/contact.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Avatar = () => {
 
-  const [hover, setHover] = useState(false);
+  const [click, setclick] = useState(false);
 
-  const handleHover = () => {
-    setHover(!hover);
+  const handleclick = () => {
+    setclick(!click);
   }
 
   return (
@@ -22,23 +23,23 @@ const Avatar = () => {
           width={200}
           height={200}
           className="contact-pic"
-          onClick={handleHover}
+          onClick={handleclick}
         />
         <div className="hover-content">hello! Click me to contact</div>
         <div className="first-bubble"></div>
         <div className="second-bubble"></div>
         <div className="third-bubble"></div>
      
-        {hover && (
+        {click && (
           <div className="clicked-content">
-           <div className="github">
+           <Link href="#" className="github ">
            <span className="skill-icons--github-dark"></span>
-           </div>
-           <div className="linkdin">
+           </Link>
+           <Link href="#" className="linkdin">
            <span className="devicon--linkedin"></span>
-           </div>
-           <div className="instagram"><span className="skill-icons--instagram"></span></div>
-           <div className="email"><span className="skill-icons--gmail-dark"></span></div>
+           </Link>
+           <Link href="#" className="instagram"><span className="skill-icons--instagram"></span></Link>
+           <Link href="#" className="email"><span className="skill-icons--gmail-dark"></span></Link>
           </div>
         )}
       </div>
