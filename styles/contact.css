@@ -8,7 +8,7 @@
   }
   
   .contact {
-    position: relative; /* Allows positioning of hover-content inside */
+    position: relative; 
   }
   
   .contact-pic {
@@ -20,17 +20,17 @@
   }
   
   .contact-pic:hover {
-    transform: scale(1.1); /* Scale image when hovered */
+    transform: scale(1.1); 
   }
   
-  /* Initially hide all bubbles and content */
+
   .hover-content, .first-bubble, .second-bubble, .third-bubble {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0s 0.3s; /* Visibility is delayed to ensure smooth hide */
+    transition: opacity 0.3s ease, visibility 0s 0.3s; 
   }
   
-  /* Specific positions and sizes for each bubble */
+
   .first-bubble {
     position: absolute;
     bottom: 100px;
@@ -57,33 +57,33 @@
     left: 245px;
     width: 40px;
     height: 40px;
-    background-color: rgb(168, 14, 14);
+    background-color: white;
     border-radius: 50%;
   }
   
-  /* Hovering on the image triggers bubbles and content to show in sequence */
+  
   .contact-pic:hover ~ .first-bubble {
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.3s; /* First bubble appears after 0.3s */
+    transition-delay: 0.3s; 
   }
   
   .contact-pic:hover ~ .second-bubble {
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.6s; /* Second bubble appears after 0.6s */
+    transition-delay: 0.6s; 
   }
   
   .contact-pic:hover ~ .third-bubble {
     opacity: 1;
     visibility: visible;
-    transition-delay: 0.9s; /* Third bubble appears after 0.9s */
+    transition-delay: 0.9s; 
   }
   
   .contact-pic:hover ~ .hover-content {
     opacity: 1;
     visibility: visible;
-    transition-delay: 1.2s; /* Hover content appears last after 1.2s */
+    transition-delay: 1.2s; 
   }
   
   
@@ -98,9 +98,9 @@
     font-size: 15px;
     text-align: center;
     white-space: nowrap;
-    opacity: 0; /* Initially hidden */
+    opacity: 0; 
     display: block;
     animation: showContent 0.3s forwards;
-    animation-delay: 2.1s; /* Shows after the bubbles */
+    animation-delay: 2.1s; 
   }
   
