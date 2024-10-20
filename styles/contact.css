@@ -1,22 +1,106 @@
-.contact{
+.contact-section {
     width: 100vw;
     height: 900px;
     background: purple;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.pic-contact{
-    width: 100px;
-    height: 100px;
-    background: white;
+  }
+  
+  .contact {
+    position: relative; /* Allows positioning of hover-content inside */
+  }
+  
+  .contact-pic {
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.pic-contact:hover{
-    scale: 1.1;
-}
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-pic:hover {
+    transform: scale(1.1); /* Scale image when hovered */
+  }
+  
+  /* Initially hide all bubbles and content */
+  .hover-content, .first-bubble, .second-bubble, .third-bubble {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s; /* Visibility is delayed to ensure smooth hide */
+  }
+  
+  /* Specific positions and sizes for each bubble */
+  .first-bubble {
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .second-bubble {
+    position: absolute;
+    bottom: 120px;
+    left: 220px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  
+  .third-bubble {
+    position: absolute;
+    bottom: 150px;
+    left: 245px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(168, 14, 14);
+    border-radius: 50%;
+  }
+  
+  /* Hovering on the image triggers bubbles and content to show in sequence */
+  .contact-pic:hover ~ .first-bubble {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.3s; /* First bubble appears after 0.3s */
+  }
+  
+  .contact-pic:hover ~ .second-bubble {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s; /* Second bubble appears after 0.6s */
+  }
+  
+  .contact-pic:hover ~ .third-bubble {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.9s; /* Third bubble appears after 0.9s */
+  }
+  
+  .contact-pic:hover ~ .hover-content {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1.2s; /* Hover content appears last after 1.2s */
+  }
+  
+  
+  .hover-content {
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+    padding: 15px 12px;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0; /* Initially hidden */
+    display: block;
+    animation: showContent 0.3s forwards;
+    animation-delay: 2.1s; /* Shows after the bubbles */
+  }
+  

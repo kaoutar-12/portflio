@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div>
       
-      <section className="contact">
+      <section className="contact-section">
         <Avatar/>
       </section>
     </div>
