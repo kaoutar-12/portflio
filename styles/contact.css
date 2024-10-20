@@ -110,7 +110,7 @@
 
 .clicked-content {
   position: absolute;
-  top: 200px; /* Position this as needed */
+  top: 200px;
   left: -90px;
   /* border: solid 1px black; */
   width: 400px;
@@ -130,7 +130,6 @@
 
 .github, .linkdin, .instagram, .email {
   opacity: 0;
-  transform: translateY(20px);
   animation: showLink 1s forwards;
 }
 
@@ -156,9 +155,9 @@
   }
 }
 
-/* Show the clicked content when visible */
+
 .clicked-content {
-  opacity: 1; /* This will show when rendered */
+  opacity: 1; 
 }
 
 .skill-icons--github-dark {
