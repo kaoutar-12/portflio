@@ -1,25 +1,3 @@
-// import React from "react";
-// import "@/styles/contact.css";
-// import Image from "next/image";
-
-// const Avatar = () => {
-//   return (
-//     <div className="contact">
-//       <div>
-//         <Image
-//           src="/pic.png"
-//           alt="avatar"
-//           width={200}
-//           height={200}
-//           className="contact-pic"
-//         />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Avatar;
-
 
 
 import React from "react";
